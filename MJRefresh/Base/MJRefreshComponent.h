@@ -72,7 +72,7 @@ typedef void (^MJRefreshComponentEndRefreshingCompletionBlock)();
 //- (BOOL)isRefreshing;
 /** 刷新状态 一般交给子类内部实现 */
 @property (assign, nonatomic) MJRefreshState state;
-
+@property (assign, nonatomic) MJRefreshState oldState;
 #pragma mark - 交给子类去访问
 /** 记录scrollView刚开始的inset */
 @property (assign, nonatomic, readonly) UIEdgeInsets scrollViewOriginalInset;

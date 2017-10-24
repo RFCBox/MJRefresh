@@ -143,6 +143,7 @@
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         self.state = MJRefreshStateIdle;
+        self.oldState = MJRefreshStateIdle;
     });
 }
 

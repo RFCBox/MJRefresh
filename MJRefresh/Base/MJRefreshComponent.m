@@ -172,6 +172,7 @@
 - (void)endRefreshing
 {
     self.state = MJRefreshStateIdle;
+    self.oldState = MJRefreshStateIdle;
 }
 
 - (void)endRefreshingWithCompletionBlock:(void (^)())completionBlock

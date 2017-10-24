@@ -63,5 +63,6 @@ UIKIT_EXTERN NSString *const MJRefreshHeaderNoneLastDateText;
 // 状态检查
 #define MJRefreshCheckState \
 MJRefreshState oldState = self.state; \
+self.oldState = oldState; \
 if (state == oldState) return; \
 [super setState:state];
